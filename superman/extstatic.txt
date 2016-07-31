@@ -1,0 +1,11 @@
+runserver.bat
+db.sqlite3
+README.md
+deploy_script
+logs
+*.pyc
+ext*.txt
+static
+root_static
+*git
+*idea

@@ -1,0 +1,15 @@
+
+#doc
+#*.doc
+
+
+#pyc
+*.pyc
+
+#log file
+#*.log
+
+*.project
+*.pydevproject
+*.settings
+org.*
