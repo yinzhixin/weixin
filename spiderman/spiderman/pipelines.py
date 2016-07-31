@@ -19,7 +19,7 @@ class SpidermanPipeline(object):
         self.dbpool = adbapi.ConnectionPool(
             'MySQLdb',
             db = 'test',
-            host = '123.56.26.7',
+            host = 'xxx.xx.xx.x',
             port = 3306,
             user = 'test',
             passwd = 'test',
