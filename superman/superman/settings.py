@@ -93,7 +93,7 @@ DATABASES = {
 }
 
 #DataBase Router
-DATABASE_ROUTERS = ['superman.dbrouter.BlogRouter','mytest.dbrouter.WechatRouter']
+DATABASE_ROUTERS = ['superman.dbrouter.BlogRouter','superman.dbrouter.WechatRouter']
 
 
 # Internationalization

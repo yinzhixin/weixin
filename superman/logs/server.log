@@ -1,0 +1,7 @@
+2016-08-01 23:22:02,115 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-01 23:22:02,115 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'BEGIN' - PARAMS = (); args=None
+2016-08-01 23:22:02,115 [django.db.backends.schema:102] [DEBUG] CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL); (params None)
+2016-08-01 23:22:02,131 [django.db.backends:89] [DEBUG] (0.016) QUERY = u'CREATE TABLE "django_migrations" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "app" varchar(255) NOT NULL, "name" varchar(255) NOT NULL, "applied" datetime NOT NULL)' - PARAMS = (); args=None
+2016-08-01 23:22:02,145 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-01 23:47:08,474 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-01 23:47:08,474 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()

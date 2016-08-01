@@ -5,6 +5,45 @@ try:
     import xml.etree.cElementTree as ET
 except ImportError:
     import xml.etree.ElementTree as ET 
+from django.db import connections, transaction
+
+
+
+
+class QueryData(object):
+    """django db api """
+    def __init__(self):
+        super(QueryData, self).__init__()
+        self.cursor = connections['test'].cursor
+    
+    def movie_data(self):
+        """返回电影信息，可优化为配置项"""
+        self.cursor.execute("select * from movie order by rand() limit 5")
+        return self.cursor
+
+    def joke_data(self):
+        """待扩展"""
+        pass
+
+
+
+class DataPrecess(object):
+    """定义了处理cursor返回数据的处理方式"""
+    def __init__(self):
+        super(DataPrecess, self).__init__()
+
+    @classmethod
+    def dictfetchall(cls,cursor):
+        '''将cursor查询到的每行数据作为dict元素包含在list中返回'''
+        columns = [col[0] for col in cursor.description]
+        return [dict(zip(columns, row)) for row in cursor.fetchall()]
+
+    @classmethod
+    def namedtuplefetchall(cls,cursor):
+        '''将cursor查询到的所有数据作为namedtuple返回'''
+        desc = cursor.description   #返回sql中查询的列信息的list
+        nt_result = namedtuple('Result', [col[0] for col in desc])
+        return [nt_result(*row) for row in cursor.fetchall()]
 
 
 def get_input(req):
@@ -46,3 +85,8 @@ def output(req):
         """
     xml = xmltemplate.format(get_input(req))
     return xml
+
+if __name__ == '__main__':
+    cursor = QueryData()
+    movie = DataPrecess.dictfetchall(cursor.movie_data())
+    print movie
