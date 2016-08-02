@@ -6,16 +6,13 @@ from django.views.decorators.csrf import csrf_exempt
 import hashlib
 import logging
 from .dataprocess import output, DataPrecess
-from .. import superman
-
-superman.settings.configure()
 
 
 logger = logging.getLogger('django')
 
 
 @csrf_exempt
-def apply(req):
+def test(req):
     """用于公众平台验证服务器可用性"""
     if req.method == 'GET':
         timestamp = req.GET.get('timestamp','None')
@@ -40,10 +37,39 @@ def apply(req):
             return HttpResponse(xml)
         except Exception:
             logger.error("wulalalallalalala~")
-            return HttpResponseBadRequest("bad request!")
+            return HttpResponseBadRequest("query data fail!")
     else:
         logger.error("bad request!")
         return HttpResponseBadRequest("bad request!")
+
+
+class WeiXinReq(object):
+    """handle the request from weixin"""
+    def __init__(self):
+        super(WeiXinReq, self).__init__()
+    
+    @classmethod
+    def get_req(cls, req):
+        """公众平台验证服务器是否可用"""
+        timestamp = req.GET.get('timestamp','None')
+        nonce = req.GET.get('nonce','None')
+        signature = req.GET.get('signature','None')
+        #logger.info(signature)
+        token = 'yinzhixin'
+        templist = sorted([timestamp,nonce,token])    #字典排序  
+        tempstr = ''.join(templist)         #排序后合并为字符串
+        encryptstr = hashlib.sha1(tempstr).hexdigest()      #对字符串哈希加密
+        logger.info("Encrypt:%s" %encryptstr)
+        if signature == encryptstr:
+            echostr = req.GET.get('echostr','None')
+        else:
+            echostr = "false"
+        return HttpResponse(echostr)
+
+    @classmethod
+    def post_req(cls, req):
+        pass
+        
 
 @csrf_exempt
 def wechat(req):
@@ -65,8 +91,5 @@ class QueryData(object):
         """待扩展"""
         pass
 
-if __name__ == '__main__':
-    db = QueryData()
-    movie = DataPrecess.dictfetchall(db.movie_data())
-    print movie
+
 

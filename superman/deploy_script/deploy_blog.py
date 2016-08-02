@@ -143,8 +143,8 @@ def deploy():
     """发布调用入口，windows本机亲测可行"""
     #tar_source()
     #tar_static()
-    tar_except_static()
-    put_source()
+    #tar_except_static()
+    #put_source()
     restart_service()
     #make_symlink()
 

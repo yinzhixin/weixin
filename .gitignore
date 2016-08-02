@@ -13,3 +13,5 @@
 *.pydevproject
 *.settings
 org.*
+
+settings.py

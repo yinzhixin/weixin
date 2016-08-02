@@ -1,20 +1,24 @@
 #coding: utf-8
 
 import time
+import logging
 try:
     import xml.etree.cElementTree as ET
 except ImportError:
     import xml.etree.ElementTree as ET 
 from django.db import connections, transaction
+import sys
+reload(sys)
+sys.setdefaultencoding('utf-8')
 
-
+logger = logging.getLogger('django')
 
 
 class QueryData(object):
     """django db api """
     def __init__(self):
         super(QueryData, self).__init__()
-        self.cursor = connections['test'].cursor
+        self.cursor = connections['test'].cursor()
     
     def movie_data(self):
         """返回电影信息，可优化为配置项"""
@@ -66,27 +70,46 @@ def output(req):
         <FromUserName><![CDATA[{0[fromname]}]]></FromUserName>
         <CreateTime>{0[createtime]}</CreateTime>
         <MsgType><![CDATA[news]]></MsgType>
-        <ArticleCount>2</ArticleCount>
+        <ArticleCount>5</ArticleCount>
         <Articles>
         <item>
-        <Title><![CDATA[夺宝奇兵]]></Title> 
-        <Description><![CDATA[123456]]></Description>
-        <PicUrl><![CDATA[http://pic6.qiyipic.com/image/20150317/da/e9/aa/v_105073913_m_601_m3_195_260.jpg]]></PicUrl>
-        <Url><![CDATA[http://www.iqiyi.com/v_19rrh5zbfo.html]]></Url>
+        <Title><![CDATA[{1[0][movie_name]}]]></Title> 
+        <Description><![CDATA[{1[0][movie_desc]}]></Description>
+        <PicUrl><![CDATA[{1[0][movie_image]}]]></PicUrl>
+        <Url><![CDATA[{1[0][movie_link]}]]></Url>
         </item>
         <item>
-        <Title><![CDATA[五鼠闹东京]]></Title>
-        <Description><![CDATA[宋朝时，陷空岛住着五个结拜兄弟。五鼠的武艺名声在外，庞太师派人送重金，想收买五鼠为他效力。正直侠义的五鼠不愿为奸臣卖力，白玉堂、徐庆和蒋平三人将送礼的人打了一顿，赶了回去。白玉堂在丁月华的激将下，私闯开封府，盗走了包公的尚方宝剑。庞太师对五鼠怀恨在心，派人投毒欲害死五鼠。白玉堂的四位兄长都误食中毒，并被庞太师派的杀手追杀。危急之中，展昭赶来，杀退追兵，救出四条好汉……]]></Description>
-        <PicUrl><![CDATA[http://pic5.qiyipic.com/image/20150122/77/5b/v_108871223_m_601_m1.jpg]]></PicUrl>
-        <Url><![CDATA[http://www.iqiyi.com/lib/m_202418314.html]]></Url>
+        <Title><![CDATA[{1[1][movie_name]}]]></Title> 
+        <Description><![CDATA[{1[1][movie_desc]}]></Description>
+        <PicUrl><![CDATA[{1[1][movie_image]}]]></PicUrl>
+        <Url><![CDATA[{1[1][movie_link]}]]></Url>
+        </item>
+        <item>
+        <Title><![CDATA[{1[2][movie_name]}]]></Title> 
+        <Description><![CDATA[{1[2][movie_desc]}]></Description>
+        <PicUrl><![CDATA[{1[2][movie_image]}]]></PicUrl>
+        <Url><![CDATA[{1[2][movie_link]}]]></Url>
+        </item>
+        <item>
+        <Title><![CDATA[{1[3][movie_name]}]]></Title> 
+        <Description><![CDATA[{1[3][movie_desc]}]></Description>
+        <PicUrl><![CDATA[{1[3][movie_image]}]]></PicUrl>
+        <Url><![CDATA[{1[3][movie_link]}]]></Url>
+        </item>
+        <item>
+        <Title><![CDATA[{1[4][movie_name]}]]></Title> 
+        <Description><![CDATA[{1[4][movie_desc]}]></Description>
+        <PicUrl><![CDATA[{1[4][movie_image]}]]></PicUrl>
+        <Url><![CDATA[{1[4][movie_link]}]]></Url>
         </item>
         </Articles>
         </xml>
         """
-    xml = xmltemplate.format(get_input(req))
+    try:
+        query = QueryData()
+        movie_dict = DataPrecess.dictfetchall(query.movie_data())
+        logger.info(movie_dict)
+        xml = xmltemplate.format(get_input(req), movie_dict)
+    except Exception, e:
+        logger.error(e)   
     return xml
-
-if __name__ == '__main__':
-    cursor = QueryData()
-    movie = DataPrecess.dictfetchall(cursor.movie_data())
-    print movie
