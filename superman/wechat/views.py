@@ -5,91 +5,51 @@ from django.http import HttpResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
 import hashlib
 import logging
-from .dataprocess import output, DataPrecess
-
+from .dataprocess import Interface_Data_Process
+from .dataprocess import curtime
+from .dataprocess import DatabaseProcess
+from .dataprocess import verify_source
 
 logger = logging.getLogger('django')
 
-
 @csrf_exempt
 def test(req):
-    """用于公众平台验证服务器可用性"""
+    """微信程序入口"""
     if req.method == 'GET':
-        timestamp = req.GET.get('timestamp','None')
-        nonce = req.GET.get('nonce','None')
-        signature = req.GET.get('signature','None')
-        logger.info(signature)
-        token = 'yinzhixin'
-        templist = sorted([timestamp,nonce,token])    #字典排序  
-        tempstr = ''.join(templist)         #排序后合并为字符串
-        encryptstr = hashlib.sha1(tempstr).hexdigest()      #对字符串哈希加密
-        logger.info("Encrypt:%s" %encryptstr)
-        if signature == encryptstr:
-            echostr = req.GET.get('echostr','None')
-        else:
-            echostr = "false"
+        echostr = verify_source(req)
         return HttpResponse(echostr)
     elif req.method == 'POST':
         try:
-            xml = output(req)
-            logger.info("request IP: %s" % req.META.get('REMOTE_ADDR',None))
             logger.info("request body: %s" % req.body)
+            #插入user表
+            db = DatabaseProcess()
+            user = Interface_Data_Process.get_input(req)
+            user_data = (user.username, str(user.content), user.req_ip, curtime(), curtime())
+            db.insert_user(user_data)
+            #插入movie_user_rel表
+            movie_dict = db.get_movie_data()
+            movie_list = []
+            for movie in movie_dict:
+                movie_list.append(str(movie['id']))
+            movie_id_list = '|'.join(movie_list)
+            movie_user_data = (user['username'], movie_id_list, curtime())
+            db.insert_movie_user(movie_user_data)
+            #给微信返回xml
+            xmltemplate = Interface_Data_Process.output(req)
+            xml = xmltemplate.format(user, movie_dict)
             return HttpResponse(xml)
-        except Exception:
-            logger.error("wulalalallalalala~")
+        except Exception, e:
+            logger.error("ERROR!ERROR!ERROR!:%s" % e)
             return HttpResponseBadRequest("query data fail!")
     else:
         logger.error("bad request!")
         return HttpResponseBadRequest("bad request!")
 
-
-class WeiXinReq(object):
-    """handle the request from weixin"""
-    def __init__(self):
-        super(WeiXinReq, self).__init__()
-    
-    @classmethod
-    def get_req(cls, req):
-        """公众平台验证服务器是否可用"""
-        timestamp = req.GET.get('timestamp','None')
-        nonce = req.GET.get('nonce','None')
-        signature = req.GET.get('signature','None')
-        #logger.info(signature)
-        token = 'yinzhixin'
-        templist = sorted([timestamp,nonce,token])    #字典排序  
-        tempstr = ''.join(templist)         #排序后合并为字符串
-        encryptstr = hashlib.sha1(tempstr).hexdigest()      #对字符串哈希加密
-        logger.info("Encrypt:%s" %encryptstr)
-        if signature == encryptstr:
-            echostr = req.GET.get('echostr','None')
-        else:
-            echostr = "false"
-        return HttpResponse(echostr)
-
-    @classmethod
-    def post_req(cls, req):
-        pass
-        
-
 @csrf_exempt
 def wechat(req):
-    """接收普通消息接口"""
+    """验证应用根路径http://127.0.0.1:8000/wechat/可用性"""
     return HttpResponse("success!")
 
-class QueryData(object):
-    """django db api """
-    def __init__(self):
-        super(QueryData, self).__init__()
-        self.cursor = connections['test'].cursor
-    
-    def movie_data(self):
-        """返回电影信息，可优化为配置项"""
-        self.cursor.execute("select * from movie order by rand() limit 5")
-        return self.cursor
-
-    def joke_data(self):
-        """待扩展"""
-        pass
 
 
 

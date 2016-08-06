@@ -4,16 +4,17 @@ import requests
 
 
 url = "http://127.0.0.1:8000/wechat/test/"
+#chinese = "你好".encode('utf-8')
 data = """
     <xml>
     <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
     <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
     <CreateTime>1465874986</CreateTime>
     <MsgType><![CDATA[text]]></MsgType>
-    <Content><![CDATA[123]]></Content>
+    <Content><![CDATA[你好]]></Content>
     <MsgId>6295885125314082434</MsgId>
-    </xml>
-"""
+    </xml>""" 
+
 
 
 r = requests.post(url, data=data)
