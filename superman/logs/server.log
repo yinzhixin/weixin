@@ -2548,3 +2548,5 @@ AttributeError: 'module' object has no attribute 'wechat'
 2016-08-06 13:26:43,253 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
 2016-08-06 13:37:26,151 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
 2016-08-06 13:37:26,151 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 13:40:31,030 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 13:40:31,046 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
