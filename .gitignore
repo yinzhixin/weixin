@@ -4,4 +4,4 @@ settings.*
 *.log
 *.project
 *.pydevproject
-org.*
+#org.*
