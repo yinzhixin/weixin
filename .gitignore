@@ -1,11 +1,8 @@
-#doc
-#*.doc
-#pyc
+*.doc
 *.pyc
-#log file
-#*.log
+settings.*
+*.log
 *.project
 *.pydevproject
-*.settings
+/.settings
 org.*
-settings.*
