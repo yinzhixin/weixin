@@ -2538,3 +2538,9 @@ AttributeError: 'module' object has no attribute 'wechat'
         (open_id, movie_id, create_time)
         VALUES
         ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '755|402|98|97|99', '2016-08-06 13:02:43'); args=None
+2016-08-06 13:19:41,289 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 13:19:41,303 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 13:21:22,650 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 13:21:22,650 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 13:21:29,388 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 13:21:29,388 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
