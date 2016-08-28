@@ -1,10 +1,11 @@
 #coding: utf-8
 
+import hashlib
+import logging
+import json
 from django.shortcuts import render_to_response
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
-import hashlib
-import logging
 from .dataprocess import Interface_Data_Process
 from .dataprocess import curtime
 from .dataprocess import DatabaseProcess
@@ -20,12 +21,11 @@ def test(req):
         return HttpResponse(echostr)
     elif req.method == 'POST':
         try:
-            logger.info("request body: %s" % req.body)
+            #logger.info("request body: %s" % req.body)
             #插入user表
             db = DatabaseProcess()
             user = Interface_Data_Process.get_input(req)
-            user_data = (user.username, str(user.content), user.req_ip, curtime(), curtime())
-            db.insert_user(user_data)
+            db.insert_user(user.username,str(user.content), user.req_ip,user.current_time,user.current_time)
             #插入movie_user_rel表
             movie_dict = db.get_movie_data()
             movie_list = []
@@ -49,6 +49,14 @@ def test(req):
 def wechat(req):
     """验证应用根路径http://127.0.0.1:8000/wechat/可用性"""
     return HttpResponse("success!")
+
+@csrf_exempt
+def query(req):
+    db = DatabaseProcess()
+    data = json.dumps(db.get_movie_data(10))
+    response = HttpResponse(data)
+    response['Access-Control-Allow-Origin'] = '*'
+    return response
 
 
 

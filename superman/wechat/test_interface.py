@@ -4,7 +4,7 @@ import requests
 
 
 url = "http://127.0.0.1:8000/wechat/test/"
-#chinese = "你好".encode('utf-8')
+#chinese = "你好".decode('gbk')
 data = """
     <xml>
     <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>

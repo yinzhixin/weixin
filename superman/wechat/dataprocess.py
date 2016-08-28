@@ -2,6 +2,7 @@
 
 import time
 import logging
+import hashlib
 try:
     import xml.etree.cElementTree as ET
 except ImportError:
@@ -40,12 +41,13 @@ class DatabaseProcess(object):
         """待扩展"""
         pass
 
-    def insert_user(self,*data):
+    def insert_user(self, *data):
+        """content涉及中文，占位符要加且必须双引号，否则报数据库错误"""
         sql = '''
         INSERT INTO user 
         (open_id, input_content, req_ip, create_time, last_time) 
         VALUES
-        %s''' % data
+        ("%s", "%s","%s","%s","%s")''' % data
         self.cursor.execute(sql)      
 
     def insert_movie_user(self, *data):
@@ -75,9 +77,6 @@ class DataTranform(object):
         nt_result = namedtuple('Result', [col[0] for col in desc])
         return [nt_result(*row) for row in cursor.fetchall()]
 
-def encode_str(text, code='utf-8'):
-    text.encode(code)
-    return text
 
 def curtime(format='%Y-%m-%d %H:%M:%S'):
     current_time = time.strftime(format, time.localtime())
@@ -90,15 +89,22 @@ class Interface_Data_Process(object):
 
     @classmethod      
     def get_input(cls, req):
-        """获取用户信息"""
+        """获取微信接口用户信息"""
+        """
+        <xml>
+        <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+        <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+        <CreateTime>1465874986</CreateTime>
+        <MsgType><![CDATA[text]]></MsgType>
+        <Content><![CDATA[你好]]></Content>
+        <MsgId>6295885125314082434</MsgId>
+        </xml>
+        """
         user = ObjectDict()
         root = ET.fromstring(req.body)
         user.devname = root.find('.//ToUserName').text
         user.username = root.find('.//FromUserName').text    #user open_id
         user.content = root.find('.//Content').text    #用户输入
-        logger.info("type of content:%s" % type(user.content))
-        #content = root.find('.//Content').text.encode('utf-8')
-        #logger.info("type of content:%s" % type(content) + content)
         user.create_time = root.find('.//CreateTime').text   #用户访问时间
         user.req_ip = req.META.get('REMOTE_ADDR', None)
         user.current_time = curtime() 

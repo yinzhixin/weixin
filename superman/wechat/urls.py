@@ -5,5 +5,6 @@ from . import views
 urlpatterns = [
     url(r'^$', views.wechat, name='wechat'),
     url(r'test', views.test),
+    url(r'query', views.query),
 
 ]

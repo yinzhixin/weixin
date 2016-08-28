@@ -2552,3 +2552,1176 @@ AttributeError: 'module' object has no attribute 'wechat'
 2016-08-06 13:40:31,046 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
 2016-08-06 13:42:09,707 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
 2016-08-06 13:42:09,723 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 16:37:51,430 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 16:37:51,476 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 16:37:51,493 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 16:37:51,493 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 16:37:51', '2016-08-06 16:37:51'); args=None
+2016-08-06 16:37:51,507 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 5; args=None
+2016-08-06 16:37:51,523 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '1208|680|464|901|644', '2016-08-06 16:37:51'); args=None
+2016-08-06 16:38:03,115 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[123]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 16:38:03,178 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 16:38:03,178 [django:99] [INFO] type of content:<type 'str'>
+2016-08-06 16:38:03,194 [django.db.backends:89] [DEBUG] (0.015) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '123', '127.0.0.1', '2016-08-06 16:38:03', '2016-08-06 16:38:03'); args=None
+2016-08-06 16:38:03,210 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 5; args=None
+2016-08-06 16:38:03,210 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '832|912|745|475|744', '2016-08-06 16:38:03'); args=None
+2016-08-06 16:39:37,644 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 16:39:37,644 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 16:43:58,953 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 16:43:59,009 [django.db.backends:89] [DEBUG] (0.006) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 16:43:59,012 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 16:43:59,017 [django.db.backends:89] [DEBUG] (0.005) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', u'\u4f60\u597d', '127.0.0.1', '2016-08-06 16:43:59', '2016-08-06 16:43:59'); args=None
+2016-08-06 16:43:59,019 [django:42] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''\\u4f60\\u597d', '127.0.0.1', '2016-08-06 16:43:59', '2016-08-06 16:43:59')' at line 4")
+2016-08-06 17:07:34,868 [django:23] [INFO] request body: 
+2016-08-06 17:07:34,930 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 17:07:34,930 [django:42] [ERROR] ERROR!ERROR!ERROR!:no element found: line 1, column 0
+2016-08-06 17:09:14,253 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 17:09:14,253 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 17:09:15,313 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 17:09:15,407 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 17:09:15,423 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 17:09:15,423 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', u'\u4f60\u597d', '127.0.0.1', '2016-08-06 17:09:15', '2016-08-06 17:09:15'); args=None
+2016-08-06 17:09:15,423 [django:42] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''\\u4f60\\u597d', '127.0.0.1', '2016-08-06 17:09:15', '2016-08-06 17:09:15')' at line 4")
+2016-08-06 17:09:31,119 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 17:09:31,119 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 17:09:35,584 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 17:09:35,647 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 17:09:35,647 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 17:09:35,647 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', u'\u4f60\u597d', '127.0.0.1', '2016-08-06 17:09:35', '2016-08-06 17:09:35'); args=None
+2016-08-06 17:09:35,647 [django:42] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''\\u4f60\\u597d', '127.0.0.1', '2016-08-06 17:09:35', '2016-08-06 17:09:35')' at line 4")
+2016-08-06 17:44:17,717 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 17:44:17,766 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 17:44:17,766 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 17:44:17,780 [django.db.backends:89] [DEBUG] (0.015) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', u'\u4f60\u597d', '127.0.0.1', '2016-08-06 17:44:17', '2016-08-06 17:44:17'); args=None
+2016-08-06 17:44:17,780 [django:42] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''\\u4f60\\u597d', '127.0.0.1', '2016-08-06 17:44:17', '2016-08-06 17:44:17')' at line 4")
+2016-08-06 17:44:38,688 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 17:44:38,688 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 17:44:43,713 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 17:44:43,776 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 17:44:43,776 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 17:44:43,790 [django.db.backends:89] [DEBUG] (0.015) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 17:44:43', '2016-08-06 17:44:43'); args=None
+2016-08-06 17:44:43,790 [django.db.backends:89] [DEBUG] (0.000) select * from movie order by rand() limit 5; args=None
+2016-08-06 17:44:43,806 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '441|4225|493|694|366', '2016-08-06 17:44:43'); args=None
+2016-08-06 18:02:53,130 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:02:53,145 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:02:58,342 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:02:58,483 [django.db.backends:89] [DEBUG] (0.047) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:02:58,483 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:02:58,530 [django.db.backends:89] [DEBUG] (0.047) 
+        INSERT INTO user_test 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 18:02:58', '2016-08-06 18:02:58'); args=None
+2016-08-06 18:02:58,640 [django.db.backends:89] [DEBUG] (0.109) select * from movie order by rand() limit 5; args=None
+2016-08-06 18:02:58,671 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '396|939|944|963|601', '2016-08-06 18:02:58'); args=None
+2016-08-06 18:06:50,131 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:06:50,131 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:06:50,884 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:06:50,930 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:06:50,947 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:06:50,947 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 18:06:50', '2016-08-06 18:06:50'); args=None
+2016-08-06 18:06:50,961 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 5; args=None
+2016-08-06 18:06:50,977 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '712|644|899|844|588', '2016-08-06 18:06:50'); args=None
+2016-08-06 18:12:57,947 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:12:57,947 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:13:02,651 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:13:02,713 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:13:02,713 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:13:02,713 [django.db.backends:89] [DEBUG] (0.000) ('\n        INSERT INTO user \n        (open_id, input_content, req_ip, create_time, last_time) \n        VALUES\n        %s', (('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 18:13:02', '2016-08-06 18:13:02'),)); args=None
+2016-08-06 18:13:02,713 [django:42] [ERROR] ERROR!ERROR!ERROR!:must be string or read-only buffer, not tuple
+2016-08-06 18:21:04,132 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:21:04,132 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:21:31,019 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:21:31,082 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:21:31,096 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:21:31,098 [django:42] [ERROR] ERROR!ERROR!ERROR!:insert_user() takes exactly 1 argument (2 given)
+2016-08-06 18:24:39,299 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:24:39,299 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:24:46,782 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:24:46,861 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:24:46,861 [django:99] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:24:46,861 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:24:46', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:24:46,861 [django:43] [ERROR] ERROR!ERROR!ERROR!:insert_user() takes exactly 1 argument (2 given)
+2016-08-06 18:27:15,005 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:27:15,005 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:27:19,963 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:27:20,073 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:27:20,073 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:27:20,073 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:27:20', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:27:20,073 [django:43] [ERROR] ERROR!ERROR!ERROR!:insert_user() takes exactly 1 argument (2 given)
+2016-08-06 18:27:57,690 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:27:57,690 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:28:05,674 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:28:05,848 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:28:05,848 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:28:05,848 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:28:05', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:28:05,848 [django:43] [ERROR] ERROR!ERROR!ERROR!:'tuple' object has no attribute 'username'
+2016-08-06 18:32:08,196 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:32:08,196 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:32:09,933 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:32:09,996 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:32:09,996 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:32:09,996 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:32:09', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:32:09,996 [django:43] [ERROR] ERROR!ERROR!ERROR!:insert_user() takes exactly 1 argument (2 given)
+2016-08-06 18:34:41,401 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:34:41,417 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:34:42,490 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:34:42,697 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:34:42,711 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:34:42,711 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:34:42', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:34:42,711 [django:43] [ERROR] ERROR!ERROR!ERROR!:1
+2016-08-06 18:35:00,046 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:35:00,061 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:35:03,276 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:35:03,369 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:35:03,369 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:35:03,369 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:35:03', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:35:03,369 [django:43] [ERROR] ERROR!ERROR!ERROR!:0
+2016-08-06 18:36:07,065 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:36:07,081 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:37:13,578 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:37:13,625 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:37:13,625 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:37:13,625 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:37:13', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:37:13,625 [django:43] [ERROR] ERROR!ERROR!ERROR!:not all arguments converted during string formatting
+2016-08-06 18:37:54,436 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:37:54,436 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:37:55,782 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:37:55,844 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:37:55,844 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:37:55,844 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:37:55', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:37:55,844 [django:43] [ERROR] ERROR!ERROR!ERROR!:not all arguments converted during string formatting
+2016-08-06 18:38:36,996 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:38:36,996 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:38:39,502 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:38:39,565 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:38:39,565 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:38:39,565 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:38:39', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:38:39,565 [django:43] [ERROR] ERROR!ERROR!ERROR!:not all arguments converted during string formatting
+2016-08-06 18:40:36,213 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:40:36,213 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:40:38,190 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:40:38,486 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:40:38,486 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:40:38,486 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:40:38', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:40:38,486 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:40:38,2016-08-06 18:40:38)
+2016-08-06 18:40:38,533 [django.db.backends:89] [DEBUG] (0.047) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:40:38,2016-08-06 18:40:38); args=None
+2016-08-06 18:40:38,533 [django:43] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.0.1,2016-08-06 18:40:38,2016-08-06 18:40:38)' at line 4")
+2016-08-06 18:41:42,687 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:41:42,687 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:42:01,006 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:42:01,069 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:42:01,069 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:42:01,069 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:42:01', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:42:01,069 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:42:01,2016-08-06 18:42:01)
+2016-08-06 18:42:01,085 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:42:01,2016-08-06 18:42:01); args=None
+2016-08-06 18:42:01,085 [django:43] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.0.1,2016-08-06 18:42:01,2016-08-06 18:42:01)' at line 4")
+2016-08-06 18:43:31,763 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:43:31,763 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:43:45,267 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:43:45,329 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:43:45,329 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:43:45,329 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:43:45', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:43:45,329 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:43:45,2016-08-06 18:43:45)
+2016-08-06 18:43:45,345 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:43:45,2016-08-06 18:43:45); args=None
+2016-08-06 18:43:45,346 [django:43] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.0.1,2016-08-06 18:43:45,2016-08-06 18:43:45)' at line 4")
+2016-08-06 18:45:02,654 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:45:02,654 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:45:03,151 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:45:03,246 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:45:03,246 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:45:03,246 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:45:03', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:45:03,246 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:45:03,2016-08-06 18:45:03)
+2016-08-06 18:45:03,246 [django.db.backends:89] [DEBUG] (0.000) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:45:03,2016-08-06 18:45:03); args=None
+2016-08-06 18:45:03,246 [django:43] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.0.1,2016-08-06 18:45:03,2016-08-06 18:45:03)' at line 4")
+2016-08-06 18:45:34,559 [django.db.backends:89] [DEBUG] (0.016) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:45:34,559 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:45:36,237 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:45:36,285 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:45:36,285 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:45:36,285 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:45:36', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:45:36,285 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:45:36,2016-08-06 18:45:36)
+2016-08-06 18:45:36,301 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        (o-ijPw0j4UvYgJbcRuT6r2au7Huo,你好,127.0.0.1,2016-08-06 18:45:36,2016-08-06 18:45:36); args=None
+2016-08-06 18:45:36,301 [django:43] [ERROR] ERROR!ERROR!ERROR!:(1064, "You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '.0.1,2016-08-06 18:45:36,2016-08-06 18:45:36)' at line 4")
+2016-08-06 18:57:16,361 [django.db.backends:89] [DEBUG] (0.015) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:57:16,361 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:57:27,714 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:57:27,760 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:57:27,760 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:57:27,776 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:57:27', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:57:27,776 [django:44] [ERROR] ERROR!ERROR!ERROR!:not enough arguments for format string
+2016-08-06 18:58:37,631 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 18:58:37,631 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 18:59:24,536 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 18:59:24,582 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 18:59:24,582 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 18:59:24,582 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 18:59:24', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 18:59:24,582 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 18:59:24', '2016-08-06 18:59:24')
+2016-08-06 18:59:24,598 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '\xe4\xbd\xa0\xe5\xa5\xbd', '127.0.0.1', '2016-08-06 18:59:24', '2016-08-06 18:59:24'); args=None
+2016-08-06 18:59:24,598 [django.db.backends:89] [DEBUG] (0.000) select * from movie order by rand() limit 5; args=None
+2016-08-06 18:59:24,614 [django.db.backends:89] [DEBUG] (0.015) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '651|368|1074|4203|516', '2016-08-06 18:59:24'); args=None
+2016-08-06 20:11:25,703 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:11:25,703 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 20:11:46,493 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 20:11:46,805 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 20:11:46,819 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 20:11:46,819 [django:27] [INFO] {'username': 'o-ijPw0j4UvYgJbcRuT6r2au7Huo', 'current_time': '2016-08-06 20:11:46', 'req_ip': '127.0.0.1', 'devname': 'gh_c8026a854987', 'content': u'\u4f60\u597d', 'create_time': '1465874986'}
+2016-08-06 20:11:46,819 [django:49] [INFO] 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ("o-ijPw0j4UvYgJbcRuT6r2au7Huo", "你好","127.0.0.1","2016-08-06 20:11:46","2016-08-06 20:11:46")
+2016-08-06 20:11:46,867 [django.db.backends:89] [DEBUG] (0.047) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ("o-ijPw0j4UvYgJbcRuT6r2au7Huo", "你好","127.0.0.1","2016-08-06 20:11:46","2016-08-06 20:11:46"); args=None
+2016-08-06 20:11:46,882 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 5; args=None
+2016-08-06 20:11:46,898 [django.db.backends:89] [DEBUG] (0.015) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '422|509|611|852|1169', '2016-08-06 20:11:46'); args=None
+2016-08-06 20:13:26,339 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:13:26,339 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 20:14:44,903 [django:23] [INFO] request body: 
+    <xml>
+    <ToUserName><![CDATA[gh_c8026a854987]]></ToUserName>
+    <FromUserName><![CDATA[o-ijPw0j4UvYgJbcRuT6r2au7Huo]]></FromUserName>
+    <CreateTime>1465874986</CreateTime>
+    <MsgType><![CDATA[text]]></MsgType>
+    <Content><![CDATA[你好]]></Content>
+    <MsgId>6295885125314082434</MsgId>
+    </xml>
+2016-08-06 20:14:45,012 [django.db.backends:89] [DEBUG] (0.046) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 20:14:45,012 [django:100] [INFO] type of content:<type 'unicode'>
+2016-08-06 20:14:45,028 [django.db.backends:89] [DEBUG] (0.016) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ("o-ijPw0j4UvYgJbcRuT6r2au7Huo", "你好","127.0.0.1","2016-08-06 20:14:45","2016-08-06 20:14:45"); args=None
+2016-08-06 20:14:45,043 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 5; args=None
+2016-08-06 20:14:45,059 [django.db.backends:89] [DEBUG] (0.015) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '1190|977|882|114|1227', '2016-08-06 20:14:45'); args=None
+2016-08-06 20:15:12,615 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:15:12,631 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 20:22:58,500 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:22:58,500 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 20:23:14,762 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:23:14,762 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 20:23:19,792 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:23:19,792 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-06 20:28:58,260 [django.db.backends:89] [DEBUG] (0.032) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-06 20:28:58,292 [django.db.backends:89] [DEBUG] (0.031) 
+        INSERT INTO user 
+        (open_id, input_content, req_ip, create_time, last_time) 
+        VALUES
+        ("o-ijPw0j4UvYgJbcRuT6r2au7Huo", "你好","127.0.0.1","2016-08-06 20:28:58","2016-08-06 20:28:58"); args=None
+2016-08-06 20:28:58,338 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 5; args=None
+2016-08-06 20:28:58,369 [django.db.backends:89] [DEBUG] (0.031) 
+        INSERT INTO user_movie_rel
+        (open_id, movie_id, create_time)
+        VALUES
+        ('o-ijPw0j4UvYgJbcRuT6r2au7Huo', '981|747|1166|1216|642', '2016-08-06 20:28:58'); args=None
+2016-08-06 20:31:24,720 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-06 20:31:24,736 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 09:41:22,002 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 09:41:22,032 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 09:41:52,198 [django.request:170] [WARNING] Not Found: /
+2016-08-27 09:41:53,150 [django.request:170] [WARNING] Not Found: /favicon.ico
+2016-08-27 09:44:40,811 [django:165] [INFO] None
+2016-08-27 09:44:40,811 [django:170] [INFO] Encrypt:c981b7def6ee4f907c39f9bad2684a383ab2c9a2
+2016-08-27 09:45:01,108 [django.db.backends:89] [DEBUG] (0.016) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 09:45:01,108 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 09:45:05,974 [django:165] [INFO] None
+2016-08-27 09:45:05,974 [django:170] [INFO] Encrypt:c981b7def6ee4f907c39f9bad2684a383ab2c9a2
+2016-08-27 09:45:16,019 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 09:45:16,035 [django.db.backends:89] [DEBUG] (0.016) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 09:45:22,137 [django:165] [INFO] None
+2016-08-27 09:45:22,137 [django:170] [INFO] Encrypt:c981b7def6ee4f907c39f9bad2684a383ab2c9a2
+2016-08-27 09:45:31,216 [django.db.backends:89] [DEBUG] (0.015) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 09:45:31,216 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 09:48:02,980 [django.request:256] [ERROR] Internal Server Error: /wechat/query
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\handlers\base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\middleware\common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\mycode\weixin\superman\superman\urls.py", line 21, in <module>
+    url(r'wechat/', include('wechat.urls')),
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\conf\urls\__init__.py", line 33, in include
+    urlconf_module = import_module(urlconf_module)
+  File "C:\Python27\lib\importlib\__init__.py", line 37, in import_module
+    __import__(name)
+  File "F:\mycode\weixin\superman\wechat\urls.py", line 8, in <module>
+    url(r'query', view.query),
+NameError: name 'view' is not defined
+2016-08-27 09:48:33,285 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 09:48:33,316 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 5; args=None
+2016-08-27 09:49:32,440 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 09:49:32,440 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 09:49:34,486 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 09:49:34,516 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 09:49:34,516 [django.request:256] [ERROR] Internal Server Error: /wechat/query
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django-1.8.5-py2.7.egg\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data())
+  File "C:\Python27\lib\json\__init__.py", line 243, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 7, 31, 12, 18, 58, tzinfo=<UTC>) is not JSON serializable
+2016-08-27 10:03:56,806 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:03:56,822 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 5; args=None
+2016-08-27 10:40:48,490 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:40:48,522 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 10:51:07,009 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 10:51:07,026 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 10:51:09,398 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:51:09,414 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 5; args=None
+2016-08-27 10:51:18,401 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:51:18,448 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 5; args=None
+2016-08-27 10:51:37,614 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:51:37,644 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 10:54:34,535 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:54:34,549 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 5; args=None
+2016-08-27 10:57:54,469 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 10:57:54,500 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:02:59,085 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:02:59,115 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:04:55,084 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:04:55,115 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:05:44,305 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:05:44,335 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:07:16,322 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:07:16,354 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:07:47,773 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:07:47,805 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:09:31,611 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:09:31,641 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:09:37,618 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:09:37,650 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:10:32,828 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:10:32,859 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:11:13,351 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:11:13,368 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:15:50,332 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:15:50,362 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:16:10,805 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:16:10,835 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:17:54,818 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:17:54,834 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:24:04,007 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:24:04,039 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:26:11,216 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:26:11,230 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:31:54,818 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:31:54,848 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:33:25,289 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:33:25,321 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:43:28,253 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:43:28,286 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:45:27,503 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:45:27,535 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 11:53:29,687 [django.db.backends:89] [DEBUG] (0.046) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 11:53:29,719 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 5; args=None
+2016-08-27 12:21:48,184 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 12:21:48,216 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 5; args=None
+2016-08-27 12:24:00,805 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 12:24:00,835 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 5; args=None
+2016-08-27 12:29:02,628 [django.db.backends:89] [DEBUG] (0.000) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-27 12:29:02,628 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-27 12:29:50,305 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 12:29:50,335 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 12:59:34,953 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 12:59:34,969 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:06:19,404 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:06:19,436 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:09:48,131 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:09:48,148 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:13:05,953 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:13:05,983 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:15:16,273 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:15:16,303 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:16:10,206 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:16:10,236 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:17:08,033 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:17:08,049 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:17:08,096 [django.db.backends:89] [DEBUG] (0.063) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:17:08,096 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:17:28,288 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:17:28,319 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:18:27,003 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:18:27,003 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:18:27,051 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:18:27,051 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:21:06,457 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:21:06,489 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:21:06,815 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:21:06,848 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:21:10,186 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:21:10,217 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:21:10,607 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:21:10,654 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:16,647 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:16,647 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:16,677 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:16,694 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:17,926 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:17,941 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:17,957 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:17,973 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:18,815 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:18,831 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:18,846 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:18,861 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:19,750 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:19,750 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:19,782 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:19,798 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:20,484 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:20,484 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:24:20,516 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:24:20,530 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:30:07,588 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:30:07,619 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:32:35,888 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:32:35,920 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:32:39,180 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:32:39,210 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:32:42,786 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:32:42,816 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:32:43,846 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:32:43,878 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:32:53,112 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:32:53,144 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:37:04,753 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:37:04,753 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:37:04,799 [django.db.backends:89] [DEBUG] (0.046) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:37:04,799 [django.db.backends:89] [DEBUG] (0.046) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:52:31,759 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:52:31,759 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:52:31,805 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:52:31,805 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:52:34,957 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:52:34,973 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 13:52:35,003 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 13:52:35,019 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:00:23,476 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:00:23,507 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:01:19,979 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:01:20,009 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:13:43,727 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:13:43,759 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:15:26,335 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:15:26,351 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:15:34,823 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:15:34,855 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:39:11,359 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:39:11,375 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:42:18,115 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:42:18,148 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:43:03,546 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:43:03,576 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:48:27,073 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:48:27,105 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 14:54:28,967 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 14:54:28,999 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:05:18,078 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:05:18,111 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:06:21,569 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:06:21,599 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:10:39,112 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:10:39,144 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:15:06,688 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:15:06,720 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:16:09,444 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:16:09,476 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:17:19,398 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:17:19,414 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:20:02,122 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:20:02,154 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:20:26,849 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:20:26,881 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:23:28,763 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:23:28,793 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:27:30,839 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:27:30,871 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:28:17,497 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:28:17,529 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:37:45,553 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:37:45,585 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:38:26,454 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:38:26,486 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:41:50,187 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:41:50,233 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:42:49,167 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:42:49,197 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:43:05,819 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:43:05,849 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:47:25,351 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:47:25,381 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 15:56:47,371 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 15:56:47,401 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:09:25,713 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:09:25,730 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:14:40,193 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:14:40,223 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:15:09,403 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:15:09,434 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:17:41,953 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:17:41,984 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:20:18,799 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:20:18,829 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:23:35,450 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:23:35,482 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:26:18,253 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:26:18,286 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:27:50,500 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:27:50,532 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:28:17,963 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:28:17,979 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:29:45,806 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:29:45,838 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:32:47,540 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:32:47,572 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:32:59,752 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:32:59,799 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:37:48,644 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:37:48,677 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:38:12,829 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:38:12,861 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:39:45,243 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:39:45,259 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:40:28,729 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:40:28,759 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:42:48,743 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:42:48,773 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:43:20,766 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:43:20,798 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:44:10,805 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:44:10,835 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:44:27,904 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:44:27,936 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:45:28,529 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:45:28,543 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:45:42,506 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:45:42,538 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:46:03,150 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:46:03,180 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:46:06,394 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:46:06,410 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 16:59:43,592 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 16:59:43,608 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:02:05,707 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:02:05,737 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:02:13,335 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:02:13,367 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:02:13,413 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:02:13,444 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:03:03,132 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:03:03,164 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:03:04,723 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:03:04,755 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:06:05,628 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:06:05,658 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:06:09,059 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:06:09,091 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:06:10,479 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:06:10,494 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:06:12,678 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:06:12,710 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:08:25,665 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:08:25,697 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:08:40,572 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:08:40,602 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:11:26,865 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:11:26,895 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:11:46,257 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:11:46,289 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:16:39,604 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:16:39,635 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:21:53,437 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:21:53,467 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:27:31,697 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:27:31,744 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:28:19,535 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:28:19,566 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:28:46,426 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:28:46,457 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:36:51,628 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:36:51,661 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:39:20,135 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:39:20,167 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:43:10,619 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:43:10,651 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:45:14,901 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:45:14,933 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:49:38,904 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:49:38,936 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:50:00,322 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:50:00,355 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:50:11,592 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:50:11,638 [django.db.backends:89] [DEBUG] (0.046) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:50:42,109 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:50:42,141 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:52:46,214 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:52:46,246 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 17:59:42,056 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 17:59:42,088 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 18:00:37,052 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 18:00:37,069 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 18:06:06,846 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 18:06:06,878 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 18:09:56,433 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 18:09:56,463 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:06:10,253 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:06:10,301 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:06:57,563 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:06:57,595 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:08:14,165 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:08:14,211 [django.db.backends:89] [DEBUG] (0.046) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:08:36,552 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:08:36,582 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:14:05,782 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:14:05,813 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:15:19,408 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:15:19,440 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:18:34,648 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:18:34,678 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:21:54,788 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:21:54,819 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:23:36,355 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:23:36,385 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:40:24,694 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:40:24,726 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:42:11,288 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:42:11,319 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:42:49,596 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:42:49,628 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:45:20,072 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:45:20,104 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:45:57,286 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:45:57,316 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:46:33,467 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:46:33,497 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:49:49,510 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:49:49,542 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:57:12,575 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:57:12,592 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 20:59:23,951 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 20:59:23,967 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 21:00:57,252 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 21:00:57,267 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-27 21:17:20,336 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 21:17:20,430 [django.db.backends:89] [DEBUG] (0.093) select * from movie order by rand() limit 10; args=None
+2016-08-27 21:18:12,269 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 21:18:12,299 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 21:18:57,063 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 21:18:57,125 [django.db.backends:89] [DEBUG] (0.062) select * from movie order by rand() limit 10; args=None
+2016-08-27 21:19:57,482 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 21:19:57,513 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 21:21:00,483 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 21:21:00,529 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:33:33,369 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:33:33,401 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:36:13,674 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:36:13,707 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:38:25,229 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:38:25,259 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:38:59,729 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:38:59,759 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:40:47,148 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:40:47,180 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:41:32,381 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:41:32,413 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:42:01,463 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:42:01,510 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:43:20,803 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:43:20,851 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:44:30,513 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:44:30,543 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:48:37,555 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:48:37,569 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:50:46,345 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:50:46,375 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:51:03,801 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:51:03,832 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-27 23:52:01,336 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-27 23:52:01,368 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:10:37,528 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:10:37,638 [django.db.backends:89] [DEBUG] (0.110) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:12:55,694 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:12:55,726 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:13:49,835 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:13:49,882 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:18:09,516 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:18:09,532 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:19:20,540 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:19:20,572 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:21:33,000 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:21:33,030 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:24:19,221 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:24:19,253 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:27:29,160 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:27:29,190 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:30:36,381 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:30:36,413 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:31:33,098 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:31:33,130 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:32:39,999 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:32:40,030 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:38:45,917 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:38:45,948 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:40:33,704 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:40:33,720 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:44:57,750 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:44:57,780 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:47:46,684 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:47:46,714 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:50:37,154 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:50:37,184 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 00:51:16,414 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 00:51:16,740 [django.db.backends:89] [DEBUG] (0.327) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:13:08,709 [django.db.backends:89] [DEBUG] (0.030) QUERY = "\n            SELECT name, type FROM sqlite_master\n            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'\n            ORDER BY name" - PARAMS = (); args=None
+2016-08-28 12:13:08,838 [django.db.backends:89] [DEBUG] (0.000) QUERY = u'SELECT "django_migrations"."app", "django_migrations"."name" FROM "django_migrations"' - PARAMS = (); args=()
+2016-08-28 12:13:18,430 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:13:18,461 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:15:15,384 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:15:15,414 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:20:35,561 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:20:35,576 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:22:03,342 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:22:03,404 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:22:59,579 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:22:59,611 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:26:09,697 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:26:09,729 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:27:02,364 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:27:02,394 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 12:28:41,315 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 12:28:41,345 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 13:57:17,944 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 13:57:17,976 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:00:20,855 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:00:20,885 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:01:52,926 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:01:52,957 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:02:40,990 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:02:41,020 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:07:36,002 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:07:36,032 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:15:38,619 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:15:38,651 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:16:34,671 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:16:34,701 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:16:50,987 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:16:51,019 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:17:39,239 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:17:39,269 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:19:09,657 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:19:09,687 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:19:20,950 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:19:20,983 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:19:46,612 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:19:46,644 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:20:10,528 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:20:10,559 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:20:40,043 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:20:40,075 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:23:58,726 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:23:58,756 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:24:14,013 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:24:14,045 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:29:33,736 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:29:33,766 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:39:58,875 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:39:58,923 [django.db.backends:89] [DEBUG] (0.047) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:40:58,530 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:40:58,562 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:41:59,792 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:41:59,822 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:42:13,535 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:42:13,566 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:44:51,127 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:44:51,157 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:45:31,983 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:45:32,015 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:45:37,474 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:45:37,506 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:45:52,591 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:45:52,621 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:48:57,015 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:48:57,046 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:49:40,319 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:49:40,351 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:54:52,180 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:54:52,211 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:55:11,368 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:55:11,400 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:56:46,247 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:56:46,279 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:58:01,579 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:58:01,611 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:58:26,415 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:58:26,447 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 14:59:40,874 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 14:59:40,905 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-28 15:00:02,980 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 15:00:03,010 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 15:01:42,617 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 15:01:42,648 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 15:02:00,105 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 15:02:00,135 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-28 15:07:03,119 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-28 15:07:03,134 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
