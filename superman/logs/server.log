@@ -3725,3 +3725,459 @@ TypeError: datetime.datetime(2016, 7, 31, 12, 18, 58, tzinfo=<UTC>) is not JSON 
 2016-08-28 15:02:00,135 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
 2016-08-28 15:07:03,119 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
 2016-08-28 15:07:03,134 [django.db.backends:89] [DEBUG] (0.015) select * from movie order by rand() limit 10; args=None
+2016-08-29 10:24:35,174 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:24:35,267 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:24:35,283 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 10:24:35,315 [django.db.backends:89] [DEBUG] (0.015) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 10:24:41,367 [django.db.backends:89] [DEBUG] (0.005) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:24:41,394 [django.db.backends:89] [DEBUG] (0.026) select * from movie order by rand() limit 10; args=None
+2016-08-29 10:31:24,461 [django.db.backends:89] [DEBUG] (0.006) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:31:24,490 [django.db.backends:89] [DEBUG] (0.027) select * from movie order by rand() limit 10; args=None
+2016-08-29 10:32:06,216 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:32:06,246 [django.db.backends:89] [DEBUG] (0.031) select * from movie order by rand() limit 10; args=None
+2016-08-29 10:32:36,059 [django.db.backends:89] [DEBUG] (0.007) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:32:36,076 [django.db.backends:89] [DEBUG] (0.016) select * from movie order by rand() limit 10; args=None
+2016-08-29 10:33:15,763 [django.db.backends:89] [DEBUG] (0.006) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 10:33:15,789 [django.db.backends:89] [DEBUG] (0.026) select * from movie order by rand() limit 10; args=None
+2016-08-29 11:27:51,075 [django.db.backends:89] [DEBUG] (0.006) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 11:27:51,102 [django.db.backends:89] [DEBUG] (0.026) select * from movie order by rand() limit 10; args=None
+2016-08-29 11:28:43,372 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 11:28:43,404 [django.db.backends:89] [DEBUG] (0.032) select * from movie order by rand() limit 10; args=None
+2016-08-29 11:34:48,296 [django.request:170] [WARNING] Not Found: /
+2016-08-29 12:08:13,364 [django.db.backends:89] [DEBUG] (0.004) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 12:08:13,394 [django.db.backends:89] [DEBUG] (0.029) select * from movie order by rand() limit 10; args=None
+2016-08-29 16:42:58,878 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:42:58,956 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:42:58,971 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 16:42:58,986 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 16:43:06,372 [django.db.backends:89] [DEBUG] (0.008) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:43:06,401 [django.db.backends:89] [DEBUG] (0.028) select * from movie order by rand() limit 10; args=None
+2016-08-29 16:45:01,115 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:45:01,177 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:45:01,194 [django.db.backends:89] [DEBUG] (0.016) SHOW FULL TABLES; args=None
+2016-08-29 16:45:01,209 [django.db.backends:89] [DEBUG] (0.015) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 16:45:13,450 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:45:13,484 [django.db.backends:89] [DEBUG] (0.035) select * from 10 order by rand() limit monitor_field_value; args=None
+2016-08-29 16:45:13,484 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data('monitor_field_value', 10))
+  File "D:\mycode\weixin\superman\wechat\dataprocess.py", line 37, in get_movie_data
+    self.cursor.execute("select * from %s order by rand() limit %s" % (tab, num))
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "C:\Python27\lib\site-packages\django\db\utils.py", line 97, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "C:\Python27\lib\site-packages\django\db\backends\utils.py", line 62, in execute
+    return self.cursor.execute(sql)
+  File "C:\Python27\lib\site-packages\django\db\backends\mysql\base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "C:\Python27\lib\site-packages\MySQLdb\cursors.py", line 174, in execute
+    self.errorhandler(self, exc, value)
+  File "C:\Python27\lib\site-packages\MySQLdb\connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10 order by rand() limit monitor_field_value' at line 1")
+2016-08-29 16:47:58,173 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:47:58,236 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:47:58,250 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 16:47:58,266 [django.db.backends:89] [DEBUG] (0.016) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 16:48:25,908 [django.db.backends:89] [DEBUG] (0.027) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:48:25,976 [django.db.backends:89] [DEBUG] (0.067) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:48:25,977 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10))
+  File "C:\Python27\lib\json\__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 15, 11, 58, 23) is not JSON serializable
+2016-08-29 16:49:56,381 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:49:56,411 [django.db.backends:89] [DEBUG] (0.031) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:49:56,411 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10))
+  File "C:\Python27\lib\json\__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 15, 11, 39, 59) is not JSON serializable
+2016-08-29 16:50:12,885 [django.db.backends:89] [DEBUG] (0.028) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:50:12,924 [django.db.backends:89] [DEBUG] (0.037) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:50:12,926 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10))
+  File "C:\Python27\lib\json\__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 15, 11, 39, 59) is not JSON serializable
+2016-08-29 16:50:41,456 [django.db.backends:89] [DEBUG] (0.017) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:50:41,565 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:50:41,565 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 16:50:41,595 [django.db.backends:89] [DEBUG] (0.015) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 16:50:57,670 [django.db.backends:89] [DEBUG] (0.024) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:50:57,700 [django.db.backends:89] [DEBUG] (0.030) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:50:57,701 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10))
+  File "C:\Python27\lib\json\__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 15, 12, 2, 56) is not JSON serializable
+2016-08-29 16:53:54,023 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:53:54,101 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:53:54,101 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 16:53:54,117 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 16:54:01,819 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:54:01,862 [django.db.backends:89] [DEBUG] (0.042) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:54:01,864 [django:57] [INFO] [{"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "7", "conf_id": "i", "date": "u", "field_name": "3", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "1", "conf_id": "i", "date": "u", "field_name": "3", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "1", "table_name": "9", "conf_id": "i", "date": "u", "field_name": "1", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "5", "conf_id": "i", "date": "u", "field_name": "1", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "0", "conf_id": "i", "date": "u", "field_name": "3", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "2", "table_name": "4", "conf_id": "i", "date": "u", "field_name": "4", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "2", "table_name": "5", "conf_id": "i", "date": "u", "field_name": "6", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "0", "conf_id": "i", "date": "u", "field_name": "5", "id": "("}, {"count": " ", "group_by_json": "i", "update_time": "a", "ratio": "u", "create_time": "p", "value": ",", "db_name": "7", "table_name": "1", "conf_id": "m", "date": "'", "field_name": "L", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "6", "conf_id": "i", "date": "u", "field_name": "0", "id": "("}]
+2016-08-29 16:55:13,142 [django.db.backends:89] [DEBUG] (0.027) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:55:13,181 [django.db.backends:89] [DEBUG] (0.039) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:55:13,183 [django:57] [INFO] [{"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "7", "conf_id": "i", "date": "u", "field_name": "7", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "3", "conf_id": "i", "date": "u", "field_name": "8", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "1", "table_name": "2", "conf_id": "i", "date": "u", "field_name": "1", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "2", "table_name": "6", "conf_id": "i", "date": "u", "field_name": "1", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "2", "table_name": "4", "conf_id": "i", "date": "u", "field_name": "1", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "2", "table_name": "9", "conf_id": "i", "date": "u", "field_name": "7", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "2", "conf_id": "i", "date": "u", "field_name": "2", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "0", "conf_id": "i", "date": "u", "field_name": "0", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "1", "table_name": "9", "conf_id": "i", "date": "u", "field_name": "9", "id": "("}, {"count": " ", "group_by_json": "i", "update_time": "a", "ratio": "u", "create_time": "p", "value": ",", "db_name": "6", "table_name": "4", "conf_id": "m", "date": "'", "field_name": "L", "id": "("}]
+2016-08-29 16:56:00,763 [django.db.backends:89] [DEBUG] (0.027) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:56:00,802 [django.db.backends:89] [DEBUG] (0.039) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:56:00,803 [django:57] [INFO] [{"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "7", "conf_id": "i", "date": "u", "field_name": "1", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "4", "table_name": "1", "conf_id": "i", "date": "u", "field_name": "5", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "2", "conf_id": "i", "date": "u", "field_name": "2", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "4", "table_name": "2", "conf_id": "i", "date": "u", "field_name": "0", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "9", "conf_id": "i", "date": "u", "field_name": "8", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "3", "table_name": "3", "conf_id": "i", "date": "u", "field_name": "3", "id": "("}, {"count": " ", "group_by_json": "i", "update_time": "a", "ratio": "u", "create_time": "p", "value": ",", "db_name": "9", "table_name": "5", "conf_id": "m", "date": "'", "field_name": "L", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "2", "table_name": "5", "conf_id": "i", "date": "u", "field_name": "5", "id": "("}, {"count": " ", "group_by_json": "i", "update_time": "a", "ratio": "u", "create_time": "p", "value": ",", "db_name": "3", "table_name": "4", "conf_id": "m", "date": "'", "field_name": "L", "id": "("}, {"count": ",", "group_by_json": "'", "update_time": "p", "ratio": " ", "create_time": "m", "value": "L", "db_name": "5", "table_name": "8", "conf_id": "i", "date": "u", "field_name": "7", "id": "("}]
+2016-08-29 16:56:31,694 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:56:31,757 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:56:31,773 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 16:56:31,796 [django.db.backends:89] [DEBUG] (0.008) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 16:56:32,279 [django.db.backends:89] [DEBUG] (0.032) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:56:32,322 [django.db.backends:89] [DEBUG] (0.043) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 16:56:32,323 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 56, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10))
+  File "C:\Python27\lib\json\__init__.py", line 244, in dumps
+    return _default_encoder.encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: datetime.datetime(2016, 6, 15, 11, 39, 59) is not JSON serializable
+2016-08-29 16:59:28,601 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:59:28,664 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 16:59:28,696 [django.db.backends:89] [DEBUG] (0.016) SHOW FULL TABLES; args=None
+2016-08-29 16:59:28,710 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:00:09,947 [django.db.backends:89] [DEBUG] (0.027) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:00:09,983 [django.db.backends:89] [DEBUG] (0.035) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:00:09,984 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 69, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 58, in default
+    if isinstance(obj, datetime.datetime):
+NameError: global name 'datetime' is not defined
+2016-08-29 17:00:24,957 [django.db.backends:89] [DEBUG] (0.038) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:00:24,996 [django.db.backends:89] [DEBUG] (0.038) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:00:24,997 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 69, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 58, in default
+    if isinstance(obj, datetime.datetime):
+NameError: global name 'datetime' is not defined
+2016-08-29 17:00:43,480 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:00:43,552 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:00:43,566 [django.db.backends:89] [DEBUG] (0.015) SHOW FULL TABLES; args=None
+2016-08-29 17:00:43,582 [django.db.backends:89] [DEBUG] (0.016) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:00:45,397 [django.db.backends:89] [DEBUG] (0.028) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:00:45,433 [django.db.backends:89] [DEBUG] (0.035) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:00:45,434 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 70, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 61, in default
+    elif isinstance(obj, date):
+NameError: global name 'date' is not defined
+2016-08-29 17:01:20,171 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:01:20,249 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:01:20,249 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 17:01:20,263 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:01:40,948 [django.db.backends:89] [DEBUG] (0.032) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:01:40,989 [django.db.backends:89] [DEBUG] (0.039) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:01:40,990 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 70, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 64, in default
+    return json.JSONEncoder.default(self, obj)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: Decimal('0.029800') is not JSON serializable
+2016-08-29 17:08:14,604 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:14,667 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:14,667 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 17:08:14,681 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:08:17,155 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:17,197 [django.db.backends:89] [DEBUG] (0.040) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:08:17,198 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 72, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 63, in default
+    elif isinstance(obj, decimal):
+NameError: global name 'decimal' is not defined
+2016-08-29 17:08:39,848 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:39,917 [django.db.backends:89] [DEBUG] (0.007) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:39,926 [django.db.backends:89] [DEBUG] (0.007) SHOW FULL TABLES; args=None
+2016-08-29 17:08:39,943 [django.db.backends:89] [DEBUG] (0.006) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:08:40,515 [django.db.backends:89] [DEBUG] (0.023) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:40,549 [django.db.backends:89] [DEBUG] (0.033) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:08:40,549 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 72, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 66, in default
+    return json.JSONEncoder.default(self, obj)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: Decimal('0.002400') is not JSON serializable
+2016-08-29 17:08:55,678 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:55,742 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:08:55,756 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 17:08:55,773 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:12:24,263 [django.db.backends:89] [DEBUG] (0.033) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:12:24,306 [django.db.backends:89] [DEBUG] (0.041) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:12:24,308 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 72, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 63, in default
+    elif obj.isdecimal():
+AttributeError: 'Decimal' object has no attribute 'isdecimal'
+2016-08-29 17:14:01,388 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:14:01,670 [django.db.backends:89] [DEBUG] (0.218) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:14:01,686 [django.db.backends:89] [DEBUG] (0.016) SHOW FULL TABLES; args=None
+2016-08-29 17:14:01,842 [django.db.backends:89] [DEBUG] (0.141) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:14:21,243 [django.db.backends:89] [DEBUG] (0.028) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:14:21,279 [django.db.backends:89] [DEBUG] (0.035) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:14:21,280 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 72, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 66, in default
+    return json.JSONEncoder.default(self, obj)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: Decimal('0.000000') is not JSON serializable
+2016-08-29 17:25:35,588 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:25:35,650 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:25:35,650 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 17:25:35,665 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:25:37,480 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:25:37,520 [django.db.backends:89] [DEBUG] (0.039) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:25:37,522 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 72, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 63, in default
+    elif isinstance(obj, Decimal):
+NameError: global name 'Decimal' is not defined
+2016-08-29 17:29:48,503 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:29:48,565 [django.db.backends:89] [DEBUG] (0.015) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:29:48,565 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 17:29:48,596 [django.db.backends:89] [DEBUG] (0.016) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:30:06,515 [django.db.backends:89] [DEBUG] (0.024) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:30:06,548 [django.db.backends:89] [DEBUG] (0.033) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:30:06,548 [django.request:256] [ERROR] Internal Server Error: /wechat/query/
+Traceback (most recent call last):
+  File "C:\Python27\lib\site-packages\django\core\handlers\base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Python27\lib\site-packages\django\views\decorators\csrf.py", line 58, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 73, in query
+    data = json.dumps(db.get_movie_data(tab='monitor_field_value', num=10), cls=CJsonEncoder)
+  File "C:\Python27\lib\json\__init__.py", line 251, in dumps
+    sort_keys=sort_keys, **kw).encode(obj)
+  File "C:\Python27\lib\json\encoder.py", line 207, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Python27\lib\json\encoder.py", line 270, in iterencode
+    return _iterencode(o, 0)
+  File "D:\mycode\weixin\superman\wechat\views.py", line 67, in default
+    return json.JSONEncoder.default(self, obj)
+  File "C:\Python27\lib\json\encoder.py", line 184, in default
+    raise TypeError(repr(o) + " is not JSON serializable")
+TypeError: <bound method Decimal.__str__ of Decimal('0.000300')> is not JSON serializable
+2016-08-29 17:30:48,798 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:30:48,881 [django.db.backends:89] [DEBUG] (0.021) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:30:48,897 [django.db.backends:89] [DEBUG] (0.011) SHOW FULL TABLES; args=None
+2016-08-29 17:30:48,911 [django.db.backends:89] [DEBUG] (0.006) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:30:50,678 [django.db.backends:89] [DEBUG] (0.026) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:30:50,717 [django.db.backends:89] [DEBUG] (0.038) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:30:50,719 [django:74] [INFO] [{"count": 28032, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.002400", "create_time": "2016-06-08 08:00:16", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 5, "date": 20160608, "field_name": "addr", "id": 95}, {"count": 96559, "group_by_json": "{\"source\":\"ele\"}", "update_time": "2016-06-15 12:03:39", "ratio": "0.114700", "create_time": "2016-06-15 12:03:39", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 39, "date": 20160615, "field_name": "url", "id": 500}, {"count": 1849721, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.157300", "create_time": "2016-06-09 08:00:58", "value": "1", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 16, "date": 20160609, "field_name": "delivery_party", "id": 171}, {"count": 685665, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.058300", "create_time": "2016-06-09 08:00:56", "value": "4", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 15, "date": 20160609, "field_name": "panchong_flag", "id": 159}, {"count": 1100871, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.093800", "create_time": "2016-06-08 08:00:43", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 14, "date": 20160608, "field_name": "xingji", "id": 110}, {"count": 3854376, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.328400", "create_time": "2016-06-08 08:00:09", "value": "0", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 3, "date": 20160608, "field_name": "city_id", "id": 91}, {"count": 32535, "group_by_json": "{\"source\":\"dianping\"}", "update_time": "2016-06-15 12:03:59", "ratio": "0.003700", "create_time": "2016-06-15 12:03:59", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 44, "date": 20160615, "field_name": "xingji", "id": 534}, {"count": 3277724, "group_by_json": "{\"source\":\"dianping\"}", "update_time": "2016-06-15 11:58:47", "ratio": "0.375700", "create_time": "2016-06-15 11:58:47", "value": "0", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 34, "date": 20160615, "field_name": "diy_scope", "id": 470}, {"count": 11758211, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.999400", "create_time": "2016-06-10 08:05:04", "value": "\u6570\u5b57", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 20, "date": 20160610, "field_name": "group_id", "id": 223}, {"count": 1305552, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.110800", "create_time": "2016-06-13 08:01:41", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 13, "date": 20160613, "field_name": "zhuyingfanwei", "id": 334}]
+2016-08-29 17:30:59,407 [django.db.backends:89] [DEBUG] (0.030) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:30:59,447 [django.db.backends:89] [DEBUG] (0.040) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:30:59,447 [django:74] [INFO] [{"count": 42843, "group_by_json": "{\"source\":\"ele\"}", "update_time": "2016-06-15 12:03:42", "ratio": "0.050900", "create_time": "2016-06-15 12:03:42", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 40, "date": 20160615, "field_name": "peisongfei", "id": 507}, {"count": 9945765, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.847300", "create_time": "2016-06-07 08:02:02", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 18, "date": 20160607, "field_name": "merge_category", "id": 86}, {"count": 3364866, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.285600", "create_time": "2016-06-13 08:01:41", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 13, "date": 20160613, "field_name": "zhuyingfanwei", "id": 333}, {"count": 2614799, "group_by_json": "{\"source\":\"dianping\"}", "update_time": "2016-06-15 12:03:54", "ratio": "0.299700", "create_time": "2016-06-15 12:03:54", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 43, "date": 20160615, "field_name": "zhuyingfanwei", "id": 525}, {"count": 255136, "group_by_json": "{\"source\":\"nuomi\"}", "update_time": "2016-06-15 12:04:11", "ratio": "1.000000", "create_time": "2016-06-15 12:04:11", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 48, "date": 20160615, "field_name": "merge_category", "id": 592}, {"count": 12, "group_by_json": "{\"source\":\"baidu\"}", "update_time": "2016-06-15 12:03:54", "ratio": "0.000000", "create_time": "2016-06-15 12:03:54", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 43, "date": 20160615, "field_name": "zhuyingfanwei", "id": 526}, {"count": 841875, "group_by_json": "{\"source\":\"ele\"}", "update_time": "2016-06-15 11:58:38", "ratio": "1.000000", "create_time": "2016-06-15 11:58:38", "value": "\u6570\u5b57", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 31, "date": 20160615, "field_name": "shop_id", "id": 453}, {"count": 12, "group_by_json": "{\"source\":\"baidu\"}", "update_time": "2016-06-15 12:04:05", "ratio": "0.000000", "create_time": "2016-06-15 12:04:05", "value": "0", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 46, "date": 20160615, "field_name": "delivery_party", "id": 575}, {"count": 27984, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.002400", "create_time": "2016-06-13 08:00:40", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 5, "date": 20160613, "field_name": "addr", "id": 320}, {"count": 3347375, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.284100", "create_time": "2016-06-13 08:00:47", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 6, "date": 20160613, "field_name": "tel", "id": 322}]
+2016-08-29 17:46:59,065 [django.db.backends:89] [DEBUG] (0.025) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:46:59,101 [django.db.backends:89] [DEBUG] (0.035) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:46:59,102 [django:74] [INFO] [{"count": 38, "group_by_json": "{\"source\":\"meituan\"}", "update_time": "2016-06-15 12:04:05", "ratio": "0.000000", "create_time": "2016-06-15 12:04:05", "value": "0", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 46, "date": 20160615, "field_name": "delivery_party", "id": 570}, {"count": 96559, "group_by_json": "{\"source\":\"ele\"}", "update_time": "2016-06-15 11:59:10", "ratio": "0.114700", "create_time": "2016-06-15 11:59:10", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 37, "date": 20160615, "field_name": "point_x", "id": 487}, {"count": 532547, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.045400", "create_time": "2016-06-07 08:01:57", "value": "2", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 15, "date": 20160607, "field_name": "panchong_flag", "id": 69}, {"count": 1124, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.000100", "create_time": "2016-06-14 08:19:56", "value": "3", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 16, "date": 20160614, "field_name": "delivery_party", "id": 394}, {"count": 254770, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.022200", "create_time": "2016-06-06 12:14:31", "value": "6", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 15, "date": 20160606, "field_name": "panchong_flag", "id": 31}, {"count": 255136, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.021600", "create_time": "2016-06-14 08:19:31", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 15, "date": 20160614, "field_name": "panchong_flag", "id": 386}, {"count": 536904, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.045700", "create_time": "2016-06-09 08:00:56", "value": "2", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 15, "date": 20160609, "field_name": "panchong_flag", "id": 162}, {"count": 3351701, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.285500", "create_time": "2016-06-08 08:00:39", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 13, "date": 20160608, "field_name": "zhuyingfanwei", "id": 108}, {"count": 113069, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.009600", "create_time": "2016-06-13 08:00:55", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 7, "date": 20160613, "field_name": "point_x", "id": 323}, {"count": 27990, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.002400", "create_time": "2016-06-12 08:00:17", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 5, "date": 20160612, "field_name": "addr", "id": 275}]
+2016-08-29 17:47:54,882 [django.db.backends:89] [DEBUG] (0.027) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:47:54,918 [django.db.backends:89] [DEBUG] (0.035) select * from monitor_field_value order by rand() limit 10; args=None
+2016-08-29 17:47:54,920 [django:74] [INFO] [{"count": 102661, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.008700", "create_time": "2016-06-14 08:12:12", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 7, "date": 20160614, "field_name": "point_x", "id": 368}, {"count": 11782040, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "1.000000", "create_time": "2016-06-13 08:00:08", "value": "\u6570\u5b57", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 1, "date": 20160613, "field_name": "shop_id", "id": 314}, {"count": 1, "group_by_json": "", "update_time": "2016-06-15 11:58:25", "ratio": "0.000000", "create_time": "2016-06-15 11:58:25", "value": "c", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 16, "date": 20160615, "field_name": "delivery_party", "id": 442}, {"count": 7519386, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.638200", "create_time": "2016-06-13 08:01:51", "value": "0", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 14, "date": 20160613, "field_name": "xingji", "id": 336}, {"count": 211772, "group_by_json": "{\"source\":\"ele\"}", "update_time": "2016-06-15 12:04:05", "ratio": "0.251500", "create_time": "2016-06-15 12:04:05", "value": "2", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 46, "date": 20160615, "field_name": "delivery_party", "id": 580}, {"count": 12, "group_by_json": "{\"source\":\"baidu\"}", "update_time": "2016-06-15 12:02:56", "ratio": "0.000000", "create_time": "2016-06-15 12:02:56", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 38, "date": 20160615, "field_name": "point_y", "id": 492}, {"count": 1037865, "group_by_json": "{\"source\":\"meituan\"}", "update_time": "2016-06-15 11:58:38", "ratio": "1.000000", "create_time": "2016-06-15 11:58:38", "value": "\u6570\u5b57", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 31, "date": 20160615, "field_name": "shop_id", "id": 452}, {"count": 3369399, "group_by_json": "", "update_time": "2016-06-15 11:58:17", "ratio": "0.285700", "create_time": "2016-06-15 11:58:17", "value": null, "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 13, "date": 20160615, "field_name": "zhuyingfanwei", "id": 422}, {"count": 8952168, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.762600", "create_time": "2016-06-08 08:00:44", "value": "0", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 15, "date": 20160608, "field_name": "panchong_flag", "id": 119}, {"count": 255136, "group_by_json": "", "update_time": "2016-06-15 11:39:59", "ratio": "0.021600", "create_time": "2016-06-14 08:19:56", "value": "", "db_name": "impala", "table_name": "dim_shop_all", "conf_id": 16, "date": 20160614, "field_name": "delivery_party", "id": 396}]
+2016-08-29 17:58:02,359 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:58:02,453 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:58:02,453 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-29 17:58:02,484 [django.db.backends:89] [DEBUG] (0.016) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-29 17:58:23,506 [django.db.backends:89] [DEBUG] (0.025) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:58:23,532 [django.db.backends:89] [DEBUG] (0.026) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-29 17:58:23,533 [django:74] [INFO] [{"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.7", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(city_id<>0 and city_id is not null,1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 39, "desc": "\u7f8e\u56e2\u57ce\u5e02"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/testArea", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='meituan',1,0));sum(if(source='meituan',liushui_fee_caipin,0));sum(if(source='meituan',order_num,0))", "receiver_mail": null, "conditions": null, "id": 36, "desc": "Mysql\u7f8e\u56e2\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "0.5", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.2", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(panchong_flag in (3,5,7),1,0))/count(*) ", "receiver_mail": null, "conditions": "source = 'meituan' and exception_flag = 0", "id": 40, "desc": "\u7f8e\u56e2\u5224\u91cd"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "echo \u2018\u8fd9\u5c31\u4e0d\u5999\u4e86\u2019", "dbname": "waimai_compete", "expect_min": "1", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(diy_scope<>'' and diy_scope is not null and diy_scope <> '0',1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 38, "desc": "\u7f8e\u56e2\u5546\u5708"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/tmonitor  @@INDEX_DAY@@ @@INDEX_DAY-1@@", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='baidu',1,0));sum(if(source='baidu',liushui_fee_caipin,0));sum(if(source='baidu',order_num,0))", "receiver_mail": null, "conditions": null, "id": 35, "desc": "Mysql\u767e\u5ea6\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='ele',1,0));sum(if(source='ele',liushui_fee_caipin,0));sum(if(source='ele',order_num,0))", "receiver_mail": null, "conditions": null, "id": 37, "desc": "Mysql\u997f\u4e86\u6d41\u6c34"}, {"username": "", "is_divided_by_date": 0, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "impala", "expect_min": "0", "legal_rate": null, "cmptype": 1, "check_fields": "count(*)", "receiver_mail": null, "conditions": null, "id": 41, "desc": "impala\u6d4b\u8bd5"}]
+2016-08-29 17:59:05,763 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 17:59:05,798 [django.db.backends:89] [DEBUG] (0.033) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-29 17:59:05,799 [django:74] [INFO] [{"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "echo \u2018\u8fd9\u5c31\u4e0d\u5999\u4e86\u2019", "dbname": "waimai_compete", "expect_min": "1", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(diy_scope<>'' and diy_scope is not null and diy_scope <> '0',1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 38, "desc": "\u7f8e\u56e2\u5546\u5708"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='ele',1,0));sum(if(source='ele',liushui_fee_caipin,0));sum(if(source='ele',order_num,0))", "receiver_mail": null, "conditions": null, "id": 37, "desc": "Mysql\u997f\u4e86\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.7", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(city_id<>0 and city_id is not null,1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 39, "desc": "\u7f8e\u56e2\u57ce\u5e02"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/testArea", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='meituan',1,0));sum(if(source='meituan',liushui_fee_caipin,0));sum(if(source='meituan',order_num,0))", "receiver_mail": null, "conditions": null, "id": 36, "desc": "Mysql\u7f8e\u56e2\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/tmonitor  @@INDEX_DAY@@ @@INDEX_DAY-1@@", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='baidu',1,0));sum(if(source='baidu',liushui_fee_caipin,0));sum(if(source='baidu',order_num,0))", "receiver_mail": null, "conditions": null, "id": 35, "desc": "Mysql\u767e\u5ea6\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "0.5", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.2", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(panchong_flag in (3,5,7),1,0))/count(*) ", "receiver_mail": null, "conditions": "source = 'meituan' and exception_flag = 0", "id": 40, "desc": "\u7f8e\u56e2\u5224\u91cd"}, {"username": "", "is_divided_by_date": 0, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "impala", "expect_min": "0", "legal_rate": null, "cmptype": 1, "check_fields": "count(*)", "receiver_mail": null, "conditions": null, "id": 41, "desc": "impala\u6d4b\u8bd5"}]
+2016-08-29 18:00:21,615 [django.db.backends:89] [DEBUG] (0.027) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 18:00:21,645 [django.db.backends:89] [DEBUG] (0.029) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-29 18:00:21,647 [django:74] [INFO] [{"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/testArea", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='meituan',1,0));sum(if(source='meituan',liushui_fee_caipin,0));sum(if(source='meituan',order_num,0))", "receiver_mail": null, "conditions": null, "id": 36, "desc": "Mysql\u7f8e\u56e2\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.7", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(city_id<>0 and city_id is not null,1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 39, "desc": "\u7f8e\u56e2\u57ce\u5e02"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/tmonitor  @@INDEX_DAY@@ @@INDEX_DAY-1@@", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='baidu',1,0));sum(if(source='baidu',liushui_fee_caipin,0));sum(if(source='baidu',order_num,0))", "receiver_mail": null, "conditions": null, "id": 35, "desc": "Mysql\u767e\u5ea6\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='ele',1,0));sum(if(source='ele',liushui_fee_caipin,0));sum(if(source='ele',order_num,0))", "receiver_mail": null, "conditions": null, "id": 37, "desc": "Mysql\u997f\u4e86\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "echo \u2018\u8fd9\u5c31\u4e0d\u5999\u4e86\u2019", "dbname": "waimai_compete", "expect_min": "1", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(diy_scope<>'' and diy_scope is not null and diy_scope <> '0',1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 38, "desc": "\u7f8e\u56e2\u5546\u5708"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "0.5", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.2", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(panchong_flag in (3,5,7),1,0))/count(*) ", "receiver_mail": null, "conditions": "source = 'meituan' and exception_flag = 0", "id": 40, "desc": "\u7f8e\u56e2\u5224\u91cd"}, {"username": "", "is_divided_by_date": 0, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "impala", "expect_min": "0", "legal_rate": null, "cmptype": 1, "check_fields": "count(*)", "receiver_mail": null, "conditions": null, "id": 41, "desc": "impala\u6d4b\u8bd5"}]
+2016-08-29 18:00:49,776 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-29 18:00:49,806 [django.db.backends:89] [DEBUG] (0.031) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-29 18:00:49,806 [django:74] [INFO] [{"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/testArea", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='meituan',1,0));sum(if(source='meituan',liushui_fee_caipin,0));sum(if(source='meituan',order_num,0))", "receiver_mail": null, "conditions": null, "id": 36, "desc": "Mysql\u7f8e\u56e2\u6d41\u6c34"}, {"username": "", "is_divided_by_date": 0, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "impala", "expect_min": "0", "legal_rate": null, "cmptype": 1, "check_fields": "count(*)", "receiver_mail": null, "conditions": null, "id": 41, "desc": "impala\u6d4b\u8bd5"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "0.5", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.2", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(panchong_flag in (3,5,7),1,0))/count(*) ", "receiver_mail": null, "conditions": "source = 'meituan' and exception_flag = 0", "id": 40, "desc": "\u7f8e\u56e2\u5224\u91cd"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "0.7", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(city_id<>0 and city_id is not null,1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 39, "desc": "\u7f8e\u56e2\u57ce\u5e02"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 0, "day_key": "", "reg_exp": null, "expect_max": "1", "alarm_level": 2, "tablename": "dim_shop_all", "excute_cmd": "echo \u2018\u8fd9\u5c31\u4e0d\u5999\u4e86\u2019", "dbname": "waimai_compete", "expect_min": "1", "legal_rate": null, "cmptype": 0, "check_fields": "sum(if(diy_scope<>'' and diy_scope is not null and diy_scope <> '0',1,0)) / count(*)", "receiver_mail": null, "conditions": "source = 'meituan'", "id": 38, "desc": "\u7f8e\u56e2\u5546\u5708"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "make_date_key", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "php /home/map/machao/branch/index.php --uri=t/tmonitor  @@INDEX_DAY@@ @@INDEX_DAY-1@@", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='baidu',1,0));sum(if(source='baidu',liushui_fee_caipin,0));sum(if(source='baidu',order_num,0))", "receiver_mail": null, "conditions": null, "id": 35, "desc": "Mysql\u767e\u5ea6\u6d41\u6c34"}, {"username": "\u9a6c\u8d85", "is_divided_by_date": 1, "day_key": "", "reg_exp": null, "expect_max": "0.1", "alarm_level": 2, "tablename": "fact_shop_all", "excute_cmd": "", "dbname": "waimai_compete", "expect_min": "-0.1", "legal_rate": null, "cmptype": 1, "check_fields": "sum(if(source='ele',1,0));sum(if(source='ele',liushui_fee_caipin,0));sum(if(source='ele',order_num,0))", "receiver_mail": null, "conditions": null, "id": 37, "desc": "Mysql\u997f\u4e86\u6d41\u6c34"}]
+2016-08-30 11:06:55,977 [django.db.backends:89] [DEBUG] (0.000) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-30 11:06:56,072 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-30 11:06:56,072 [django.db.backends:89] [DEBUG] (0.000) SHOW FULL TABLES; args=None
+2016-08-30 11:06:56,088 [django.db.backends:89] [DEBUG] (0.000) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-08-30 11:08:34,575 [django.db.backends:89] [DEBUG] (0.023) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-30 11:08:34,601 [django.db.backends:89] [DEBUG] (0.026) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-30 11:08:39,529 [django.db.backends:89] [DEBUG] (0.016) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-30 11:08:39,561 [django.db.backends:89] [DEBUG] (0.031) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-30 11:09:47,147 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-30 11:09:47,178 [django.db.backends:89] [DEBUG] (0.032) select * from t_compete_monitor_conf order by rand() limit 10; args=None
+2016-08-30 11:10:07,275 [django.db.backends:89] [DEBUG] (0.031) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-08-30 11:10:07,305 [django.db.backends:89] [DEBUG] (0.031) select * from t_compete_monitor_conf order by rand() limit 10; args=None

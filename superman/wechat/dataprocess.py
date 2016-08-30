@@ -3,6 +3,7 @@
 import time
 import logging
 import hashlib
+import json
 try:
     import xml.etree.cElementTree as ET
 except ImportError:
@@ -24,17 +25,29 @@ class ObjectDict(dict):
         
     def __setattr__(self, name, value):
         self[name] = value
+
+class CJsonEncoder(json.JSONEncoder):  
+    """json序列化工具类，针对特殊数据类型转换为string"""
+    def default(self, obj):  
+        if isinstance(obj, datetime.datetime):  
+            return obj.strftime('%Y-%m-%d %H:%M:%S')  
+        elif isinstance(obj, datetime.date):  
+            return obj.strftime("%Y-%m-%d")  
+        elif isinstance(obj, decimal.Decimal):
+            return str(obj)
+        else:  
+            return json.JSONEncoder.default(self, obj)  
         
 
 class DatabaseProcess(object):
     """django db api """
-    def __init__(self):
+    def __init__(self, db='test'):
         super(DatabaseProcess, self).__init__()
-        self.cursor = connections['test'].cursor()
+        self.cursor = connections[db].cursor()
     
-    def get_movie_data(self, num=5):
+    def get_movie_data(self, num=5, tab='movie'):
         """返回电影信息，可优化为配置项"""
-        self.cursor.execute("select * from movie order by rand() limit %s" % num)
+        self.cursor.execute("select * from %s order by rand() limit %s" % (tab, num))
         return DataTranform.dictfetchall(self.cursor)
 
     def get_joke_data(self):

@@ -3,6 +3,8 @@
 import hashlib
 import logging
 import json
+import datetime
+import decimal
 from django.shortcuts import render_to_response
 from django.http import HttpResponse, HttpResponseBadRequest
 from django.views.decorators.csrf import csrf_exempt
@@ -10,6 +12,7 @@ from .dataprocess import Interface_Data_Process
 from .dataprocess import curtime
 from .dataprocess import DatabaseProcess
 from .dataprocess import verify_source
+from .dataprocess import CJsonEncoder
 
 logger = logging.getLogger('django')
 
@@ -50,10 +53,14 @@ def wechat(req):
     """验证应用根路径http://127.0.0.1:8000/wechat/可用性"""
     return HttpResponse("success!")
 
+
+
 @csrf_exempt
 def query(req):
-    db = DatabaseProcess()
-    data = json.dumps(db.get_movie_data(10))
+    db = DatabaseProcess(db='dev')
+    db_data = db.get_movie_data(tab='t_compete_monitor_conf', num=10)
+    data = json.dumps(db_data, cls=CJsonEncoder)
+    #logger.info(data)
     response = HttpResponse(data)
     response['Access-Control-Allow-Origin'] = '*'
     return response
